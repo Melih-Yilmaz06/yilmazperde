@@ -1,0 +1,208 @@
+.navbar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    align-items: center;
+    gap: 11%;
+}
+
+.navbar li:first-child img {
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+}
+.navbar a {
+    text-decoration: none;
+    color: grey;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 10px;
+    border-bottom: 2px solid transparent;
+    font-size: medium;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar a:hover {
+    color: #c0392b; /* İstersen başka renk */
+    border-bottom: 2px solid #c0392b;
+    text-decoration: none;
+}
+.hizmetler-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+/* Hizmet kutuları dikey ortalama */
+.hizmet-1, .hizmet-2, .hizmet-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Yatay ortalama */
+    text-align: center;  /* Metin ortalama */
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+}
+/* İkonları ortala */
+.hizmetler-wrapper i {
+    padding-left: 0; /* Sabit boşluğu kaldır */
+    padding-top: 15px;
+    color: grey !important;
+    font-size: 24px;
+}
+
+/* Başlıkları ortala */
+.hizmetler-wrapper h3,p {
+    padding-left: 0; /* Sabit boşluğu kaldır */
+    padding-top: 5px;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Fotoğraf boyutlarını eşitle */
+.hizmetler-foto-1 img,
+.hizmetler-foto-2 img,
+.hizmetler-foto-3 img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+#hizmetler-header{
+    color: #c0392b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+.footer-wrapper {
+  background-color: #2b2b2b; /* Koyu gri arka plan */
+  color: #d1d1d1; /* Açık gri metin */
+  padding: 30px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.footer-wrapper footer{
+    border-top: 2px solid #d1d1d1 ;
+}
+.footer-wrapper footer p {
+  margin: 0 0 15px 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #d1d1d1 !important;
+  padding-top: 15px;
+}
+
+.footer-links {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #c0392b; /* Koyu kırmızı */
+  margin: 0 12px;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #e74c3c; /* Daha açık kırmızı hover efekti */
+}
+
+.footer-credit {
+  display: block;
+  margin-top: 10px;
+  color: #d1d1d1;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.footer-credit:hover{
+    color: white;
+}
+.footer-brands img{
+    width: 200px;
+    height: 150px;
+    padding-bottom: 20px;
+}
+.contact-wrapper{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 280px;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+}
+#contact-header{
+    display: flex;
+    justify-content: center;
+    color: #c0392b;
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.personal-information-location a{
+    text-decoration: none;
+    color: grey;
+    font-size: 50px;
+}
+.personal-information-location{
+    color: #c0392b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.personal-information-location:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #c0392b;
+}
+.personal-information-email:hover{
+    padding-bottom: 10px;
+    border-bottom: 3px solid #c0392b;
+}
+.personal-information-phone a{
+    text-decoration: none;
+    color: grey;
+    font-size: 50px;
+}
+.personal-information-email a{
+    text-decoration: none;
+    color: grey;
+    font-size: 50px;
+}
+.personal-information-phone{
+    color: #c0392b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-right: 95px;
+}
+.personal-information-email{
+    color: #c0392b;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.aboutme-wrapper {
+    display: flex;
+    align-items: center; /* dikey ortalama */
+    gap: 20px; /* resim ve metin arası boşluk */
+}
+
+.aboutme-wrapper img {
+    width: 300px;
+    height: 300px;
+    padding: 40px 0 40px 40px;
+    padding-right: 20px;
+    box-shadow: 2px 2px grey;
+}
+
+.aboutme-wrapper p {
+    flex: 1; /* metin alanını genişletir */
+    border: 2px solid grey;
+    padding: 10px;
+    border-radius: 10px;
+}
+.aboutme-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #c0392b;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
